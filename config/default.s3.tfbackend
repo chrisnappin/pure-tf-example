@@ -1,0 +1,3 @@
+bucket = "com.nappin.myproject-tfstate"
+region = "eu-west-2"
+dynamodb_table = "myproject-tflock"
