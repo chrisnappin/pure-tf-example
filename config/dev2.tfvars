@@ -1,7 +1,7 @@
 # Define variable values to be fed into components in the components directory that will each form a part of the environment...
 
 project            = "myexample"
-aws_account_id     = "928564404697"
+aws_account_id     = "yyy"
 region             = "eu-west-2"
 availability_zones = ["eu-west-2a", "eu-west-2b", "eu-west-2c"]
 cidr_block         = "10.1.0.0/16"

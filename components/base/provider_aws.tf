@@ -1,4 +1,4 @@
-# The default AWS provider in the default region
+# The default AWS provider
 provider "aws" {
   region = var.region
 
@@ -9,6 +9,10 @@ provider "aws" {
   allowed_account_ids = [
     var.aws_account_id,
   ]
+
+  assume_role {
+    role_arn = "arn:aws:iam::${var.aws_account_id}:role/provision_role"
+  }
 
   # The tags applied to all resources by default (unless overridden)
   default_tags {
